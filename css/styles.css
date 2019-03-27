@@ -1,0 +1,68 @@
+html, body {
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*figure {
+	width: 20%;
+	float: left;
+}
+
+figure img {
+	width: 100%;
+}
+
+figcaption {
+	text-align: right;
+}*/
+
+.grid-wrap {
+	display: grid;
+	@include center (300px);
+	/*height: 300px;*/
+	margin-top: 200px;
+	margin-left: 200px;
+	grid-gap: 50px;
+	grid-template-columns: 250px 250px 250px;
+	grid-template-rows: 300px 300px 300px 300px 300px;
+	transform: rotate(45deg);
+	justify-content: space-between;
+
+}
+
+.grid-item {
+	/*margin-top: 20px;*/
+	background: black;
+	/*width: 300px;*/
+	/*height: 250px;*/
+}
+
+img {
+	z-index: 0;
+	transform: rotate(-45deg);
+}
+
+
+p {
+	margin-left: 175px;
+	margin-top: -60px;
+	z-index: 1;
+	transform: rotate(-45deg);
+}
+
+p a {
+	
+	color: grey;
+	background: black;
+	text-decoration: none;
+	
+}
+
+p a:hover {
+	background-color: white;
+	color: black;
+}
