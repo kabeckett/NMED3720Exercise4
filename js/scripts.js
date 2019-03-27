@@ -21,6 +21,8 @@ function init() {
 
 			for (var randSelect = 0; randSelect < 10; randSelect++) {
 
+				// random number generator code from https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+
 				var randImg = Math.floor(Math.random() * picsum.length);
 				
 				imageString += "<div class='grid-item'><a href=" + picsum[randImg].post_url + "><img src='https://picsum.photos/200/300?image=" + picsum[randImg].id + "'></a><p><a href=" + picsum[randImg].author_url + ">" + picsum[randImg].author + "</a></p></div>";
